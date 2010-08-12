@@ -1,4 +1,11 @@
 #!/bin/sh
+# Using Ubuntu One for git repositories based on
+# http://stackoverflow.com/questions/1960799/using-gitdropbox-together-effectively
+#
+# Create a symbolic link to this script in a directory that is in your $PATH, e.g.:
+# ln -s /path/to/script $HOME/bin
+#
+# Execute the script in the directory you want to track with git.
 
 # variables
 GITREPOS=$HOME'/Ubuntu One/repos'
