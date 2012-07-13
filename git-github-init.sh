@@ -1,10 +1,10 @@
 #!/bin/sh
-if [ ! $1 ]; then
-    echo "Usage: $0 repository_name\n"
+if [ -z "$1" -o -z "$2" ]; then
+    echo "Usage: $0 user_name repository_name\n"
     exit
 fi
 
-URL=git@github.com:yaph/$1.git
+URL=git@github.com:$1/$2.git
 
 git init
 git add .
