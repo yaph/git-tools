@@ -7,7 +7,7 @@
 CWD=`pwd`
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
-find . -name '.git' | while read f
+find . -type d -name '.git' | while read f
 do
     DIR=`dirname $f`
     cd $DIR
