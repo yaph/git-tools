@@ -8,4 +8,4 @@ URL=https://github.com/$1/$2.git
 
 echo $URL
 
-#git remote set-url origin $URL
+git remote set-url origin $URL
