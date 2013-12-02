@@ -1,5 +1,5 @@
 #!/bin/sh
-
+# from https://github.com/visionmedia/git-extras/blob/master/bin/git-undo
 back="^"
 
 case "$1" in
