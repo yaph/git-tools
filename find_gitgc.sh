@@ -4,18 +4,15 @@
 #
 # Loop File Names With Spaces
 # @see http://www.cyberciti.biz/tips/handling-filenames-with-spaces-in-bash.html
-CWD=$(pwd)
+CWD=`pwd`
 SAVEIFS=$IFS
 IFS=$(echo -en "\n\b")
 find . -type d -name '.git' | while read f
 do
-    DIR=$(dirname "$f")
-    cd "$DIR"
-    GDO=$(git diff --exit-code .)
-    if [ -n "$GDO" ]
-        then
-            echo "$DIR"
-    fi
-    cd "$CWD"
+    DIR=`dirname $f`
+    cd $DIR
+    GDO=`git gc`
+    echo $DIR
+    cd $CWD
 done
 IFS=$SAVEIFS
