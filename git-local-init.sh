@@ -1,5 +1,5 @@
 #!/bin/sh
-GITREPOS=$HOME'/repos/remotes'
+GITREPOS=/media/rg/Volume/repos/remotes
 PROJECTDIR=`pwd`
 PROJECT=`basename $PROJECTDIR`
 PROJECTREPO=$GITREPOS/$PROJECT.git
