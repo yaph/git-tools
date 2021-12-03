@@ -17,4 +17,4 @@ git init --bare
 echo "Push to project repository"
 cd "$PROJECTDIR"
 git remote add origin "$PROJECTREPO"
-git push origin master
+git push origin main

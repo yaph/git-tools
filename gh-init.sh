@@ -9,7 +9,8 @@ URL=git@github.com:$1/$2.git
 git init
 git add .
 git commit -m 'first commit'
+git branch -M main
 git remote add origin $URL
-git push -u origin master
+git push -u origin main
 
 echo "Pushed to $URL\n"
