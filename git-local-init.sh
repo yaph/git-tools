@@ -7,9 +7,6 @@ DIR=`pwd`
 PROJECT=${1:-`basename $DIR`}
 REPO=$GITREMOTES/$PROJECT.git
 
-echo $REPO
-exit
-
 echo "Init git in project dir $DIR"
 git init
 git add .
