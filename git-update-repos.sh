@@ -2,7 +2,7 @@
 # Update (pull and push) all Git repositories found in the current directory and its subdirectories.
 set -euo pipefail
 
-gh_user="yaph"
+gh_user=${1:-"yaph"}
 
 # Find all .git directories in the current directory and subdirectories
 git_dirs=$(find "$(pwd)" -name .git -type d)
