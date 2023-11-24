@@ -1,6 +1,6 @@
 #!/bin/bash
 # This script uses the find command to locate Git repositories and the git log command to get the last commit date.
-# The script creates an associative array to store repository paths and last commit dates, sorts and prints them by commit date.
+# It then creates an associative array to store repository paths and last commit dates, sorts and prints them by commit date.
 
 # Function to get the last commit date of a Git repository
 get_last_commit_date() {
